@@ -23,6 +23,7 @@ import (
 
 	"github.com/Metixpro/macron-agent/pkg/app"
 	"github.com/Metixpro/macron-agent/pkg/config"
+	"github.com/Metixpro/macron-agent/pkg/netclient"
 )
 
 const Repository = "Metixpro/Macron-Agent"
@@ -30,6 +31,10 @@ const Repository = "Metixpro/Macron-Agent"
 var ReleaseAPI = "https://api.github.com/repos/" + Repository + "/releases"
 
 var Token = func() string { return strings.TrimSpace(os.Getenv("GITHUB_TOKEN")) }
+
+// httpClient downloads releases: it needs a generous timeout for the assets but
+// must never hang forever the way http.DefaultClient can.
+var httpClient = netclient.NewClient(netclient.Options{Timeout: 15 * time.Minute, UseEnvProxy: true})
 
 var SelfPath = func() (string, error) {
 	self, err := os.Executable()
@@ -117,7 +122,7 @@ func get(ctx context.Context, url string, api bool) (*http.Response, error) {
 			req.Header.Set("Authorization", "Bearer "+t)
 		}
 	}
-	resp, err := http.DefaultClient.Do(req)
+	resp, err := httpClient.Do(req)
 	if err != nil {
 		return nil, err
 	}

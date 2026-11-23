@@ -42,7 +42,7 @@ func (r *Registry) cloudClient() *http.Client {
 	if r.HTTP != nil {
 		return r.HTTP
 	}
-	return http.DefaultClient
+	return fallbackHTTP
 }
 
 func (r *Registry) ExecuteCloudStorage(ctx context.Context, sessionID, provider, action, remotePath, localPath, endpoint, _, _ string) (string, error) {

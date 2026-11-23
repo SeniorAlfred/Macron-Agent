@@ -25,6 +25,11 @@ import (
 //go:embed scripts/*.py
 var scriptFS embed.FS
 
+// fallbackHTTP is used when a caller did not supply a client. Unlike
+// http.DefaultClient it has a real timeout, while still honouring the proxy
+// environment the way the default client did.
+var fallbackHTTP = netclient.NewClient(netclient.Options{Timeout: 90 * time.Second, UseEnvProxy: true})
+
 const MaxToolOutput = 15000
 
 type ToolHandler func(ctx context.Context, sessionID string, args map[string]any) (string, error)

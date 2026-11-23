@@ -29,7 +29,7 @@ type AcademicPaper struct {
 
 func SearchArxiv(ctx context.Context, client *http.Client, query string, limit int) ([]AcademicPaper, error) {
 	if client == nil {
-		client = http.DefaultClient
+		client = fallbackHTTP
 	}
 	u := fmt.Sprintf("https://export.arxiv.org/api/query?search_query=all:%s&start=0&max_results=%d",
 		url.QueryEscape(query), limit)
@@ -97,7 +97,7 @@ func SearchArxiv(ctx context.Context, client *http.Client, query string, limit i
 
 func SearchSemanticScholar(ctx context.Context, client *http.Client, query string, limit int) ([]AcademicPaper, error) {
 	if client == nil {
-		client = http.DefaultClient
+		client = fallbackHTTP
 	}
 	u := fmt.Sprintf("https://api.semanticscholar.org/graph/v1/paper/search?query=%s&limit=%d&fields=title,authors,year,abstract,url,citationCount",
 		url.QueryEscape(query), limit)
@@ -173,7 +173,7 @@ func (r *Registry) SearchAcademic(ctx context.Context, query, source string, lim
 
 	client := r.HTTP
 	if client == nil {
-		client = http.DefaultClient
+		client = fallbackHTTP
 	}
 
 	var (

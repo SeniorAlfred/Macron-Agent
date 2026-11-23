@@ -47,7 +47,7 @@ func (r *Registry) SendIranMessenger(ctx context.Context, messenger, token, chat
 
 	client := r.HTTP
 	if client == nil {
-		client = http.DefaultClient
+		client = fallbackHTTP
 	}
 
 	routes := map[string]string{

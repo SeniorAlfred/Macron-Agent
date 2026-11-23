@@ -127,7 +127,7 @@ func (r *Registry) CallOpenAPIEndpoint(ctx context.Context, sessionID, specFile,
 
 	client := r.HTTP
 	if client == nil {
-		client = http.DefaultClient
+		client = fallbackHTTP
 	}
 
 	sctx, cancel := context.WithTimeout(ctx, 30*time.Second)

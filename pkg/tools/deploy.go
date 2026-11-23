@@ -20,7 +20,7 @@ func (r *Registry) DeployWithRollback(ctx context.Context, sessionID, deployCmd,
 
 	client := r.HTTP
 	if client == nil {
-		client = http.DefaultClient
+		client = fallbackHTTP
 	}
 
 	deployOpts := machine.RunOptions{

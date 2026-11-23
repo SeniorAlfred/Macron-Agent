@@ -31,7 +31,7 @@ var skipExt = map[string]bool{".jpg": true, ".jpeg": true, ".png": true, ".gif":
 func (r *Registry) pageLinks(ctx context.Context, page *url.URL) []*url.URL {
 	client := r.HTTP
 	if client == nil {
-		client = http.DefaultClient
+		client = fallbackHTTP
 	}
 	req, err := http.NewRequestWithContext(ctx, http.MethodGet, page.String(), nil)
 	if err != nil {
