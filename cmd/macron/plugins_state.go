@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/plugins"
-	"github.com/Metixpro/macron-agent/pkg/store"
+	"github.com/SeniorAlfred/macron-agent/pkg/plugins"
+	"github.com/SeniorAlfred/macron-agent/pkg/store"
 )
 
 type pluginStates struct{ st *store.Store }

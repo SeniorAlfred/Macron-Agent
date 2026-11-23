@@ -9,8 +9,8 @@ import (
 
 	"golang.org/x/term"
 
-	"github.com/Metixpro/macron-agent/pkg/app"
-	"github.com/Metixpro/macron-agent/pkg/config"
+	"github.com/SeniorAlfred/macron-agent/pkg/app"
+	"github.com/SeniorAlfred/macron-agent/pkg/config"
 )
 
 type IO struct {

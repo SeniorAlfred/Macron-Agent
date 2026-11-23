@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/textutil"
+	"github.com/SeniorAlfred/macron-agent/pkg/textutil"
 )
 
 const (

@@ -15,7 +15,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/guard"
+	"github.com/SeniorAlfred/macron-agent/pkg/guard"
 )
 
 const (

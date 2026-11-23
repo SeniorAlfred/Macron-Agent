@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/machine"
-	"github.com/Metixpro/macron-agent/pkg/textutil"
+	"github.com/SeniorAlfred/macron-agent/pkg/machine"
+	"github.com/SeniorAlfred/macron-agent/pkg/textutil"
 )
 
 const ToolShellJobs = "shell_jobs"

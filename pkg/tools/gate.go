@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/machine"
+	"github.com/SeniorAlfred/macron-agent/pkg/machine"
 )
 
 func (r *Registry) gateCommand(ctx context.Context, sessionID, cmd string) string {

@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/Metixpro/macron-agent/pkg/config"
+	"github.com/SeniorAlfred/macron-agent/pkg/config"
 )
 
 type connectionField struct {

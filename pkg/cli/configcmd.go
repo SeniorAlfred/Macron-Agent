@@ -14,8 +14,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/config"
-	"github.com/Metixpro/macron-agent/pkg/store"
+	"github.com/SeniorAlfred/macron-agent/pkg/config"
+	"github.com/SeniorAlfred/macron-agent/pkg/store"
 )
 
 func configCmd(io *IO, args []string) int {

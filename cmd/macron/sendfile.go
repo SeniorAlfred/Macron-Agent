@@ -6,8 +6,8 @@ import (
 	"io/fs"
 	"strings"
 
-	"github.com/Metixpro/macron-agent/pkg/agent"
-	"github.com/Metixpro/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/agent"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
 )
 
 func (t *terminal) FilePath(name string) (string, fs.FileInfo, error) {

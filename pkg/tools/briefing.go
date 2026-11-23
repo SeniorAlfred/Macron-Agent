@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/config"
-	"github.com/Metixpro/macron-agent/pkg/textutil"
+	"github.com/SeniorAlfred/macron-agent/pkg/config"
+	"github.com/SeniorAlfred/macron-agent/pkg/textutil"
 )
 
 const ToolGenerateBriefing = "generate_briefing"

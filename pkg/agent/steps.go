@@ -9,7 +9,7 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/Metixpro/macron-agent/pkg/textutil"
+	"github.com/SeniorAlfred/macron-agent/pkg/textutil"
 )
 
 type step struct {

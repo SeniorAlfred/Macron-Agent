@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/machine"
+	"github.com/SeniorAlfred/macron-agent/pkg/machine"
 )
 
 var loginCookies = map[string][]string{

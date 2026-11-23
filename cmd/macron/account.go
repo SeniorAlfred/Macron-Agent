@@ -4,8 +4,8 @@ import (
 	"context"
 	"strings"
 
-	"github.com/Metixpro/macron-agent/pkg/store"
-	"github.com/Metixpro/macron-agent/pkg/telegram"
+	"github.com/SeniorAlfred/macron-agent/pkg/store"
+	"github.com/SeniorAlfred/macron-agent/pkg/telegram"
 )
 
 func (b *Bot) showPanel(ctx context.Context, msg *telegram.Message, v panelView) int64 {

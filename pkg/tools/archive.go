@@ -18,7 +18,7 @@ import (
 
 	"golang.org/x/text/encoding/charmap"
 
-	"github.com/Metixpro/macron-agent/pkg/machine"
+	"github.com/SeniorAlfred/macron-agent/pkg/machine"
 )
 
 var (

@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/cmdgate"
-	"github.com/Metixpro/macron-agent/pkg/config"
+	"github.com/SeniorAlfred/macron-agent/pkg/cmdgate"
+	"github.com/SeniorAlfred/macron-agent/pkg/config"
 )
 
 const ToolConnections = "connections"

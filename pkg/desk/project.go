@@ -18,9 +18,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/agent"
-	"github.com/Metixpro/macron-agent/pkg/cmdgate"
-	"github.com/Metixpro/macron-agent/pkg/tui"
+	"github.com/SeniorAlfred/macron-agent/pkg/agent"
+	"github.com/SeniorAlfred/macron-agent/pkg/cmdgate"
+	"github.com/SeniorAlfred/macron-agent/pkg/tui"
 )
 
 const (

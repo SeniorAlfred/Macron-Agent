@@ -20,8 +20,8 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/Metixpro/macron-agent/pkg/search"
-	"github.com/Metixpro/macron-agent/pkg/textutil"
+	"github.com/SeniorAlfred/macron-agent/pkg/search"
+	"github.com/SeniorAlfred/macron-agent/pkg/textutil"
 )
 
 const (

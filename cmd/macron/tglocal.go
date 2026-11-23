@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/telegram"
+	"github.com/SeniorAlfred/macron-agent/pkg/telegram"
 )
 
 const localSendBudget = 45 * time.Minute

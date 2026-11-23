@@ -12,15 +12,15 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/agent"
-	"github.com/Metixpro/macron-agent/pkg/brain"
-	"github.com/Metixpro/macron-agent/pkg/cmdgate"
-	"github.com/Metixpro/macron-agent/pkg/config"
-	"github.com/Metixpro/macron-agent/pkg/llm"
-	"github.com/Metixpro/macron-agent/pkg/machine"
-	"github.com/Metixpro/macron-agent/pkg/search"
-	"github.com/Metixpro/macron-agent/pkg/skills"
-	"github.com/Metixpro/macron-agent/pkg/tools"
+	"github.com/SeniorAlfred/macron-agent/pkg/agent"
+	"github.com/SeniorAlfred/macron-agent/pkg/brain"
+	"github.com/SeniorAlfred/macron-agent/pkg/cmdgate"
+	"github.com/SeniorAlfred/macron-agent/pkg/config"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/machine"
+	"github.com/SeniorAlfred/macron-agent/pkg/search"
+	"github.com/SeniorAlfred/macron-agent/pkg/skills"
+	"github.com/SeniorAlfred/macron-agent/pkg/tools"
 )
 
 func execTask(term *IO, args []string) int {

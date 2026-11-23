@@ -6,7 +6,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/Metixpro/macron-agent/pkg/machine"
+	"github.com/SeniorAlfred/macron-agent/pkg/machine"
 )
 
 const shareLimit = 200 << 20

@@ -11,7 +11,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/Metixpro/macron-agent/pkg/textutil"
+	"github.com/SeniorAlfred/macron-agent/pkg/textutil"
 )
 
 const MaxRichChars = 32768

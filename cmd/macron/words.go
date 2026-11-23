@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Metixpro/macron-agent/pkg/llm"
-	"github.com/Metixpro/macron-agent/pkg/telegram"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/telegram"
 )
 
 func apiShort(api string) string {

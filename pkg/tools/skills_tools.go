@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Metixpro/macron-agent/pkg/machine"
-	"github.com/Metixpro/macron-agent/pkg/skills"
+	"github.com/SeniorAlfred/macron-agent/pkg/machine"
+	"github.com/SeniorAlfred/macron-agent/pkg/skills"
 )
 
 const (

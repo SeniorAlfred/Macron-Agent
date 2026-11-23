@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/agent"
-	"github.com/Metixpro/macron-agent/pkg/telegram"
+	"github.com/SeniorAlfred/macron-agent/pkg/agent"
+	"github.com/SeniorAlfred/macron-agent/pkg/telegram"
 )
 
 func (l *liveView) richLabel(text string, premium bool) any {

@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Metixpro/macron-agent/pkg/llm"
-	"github.com/Metixpro/macron-agent/pkg/providers"
-	"github.com/Metixpro/macron-agent/pkg/store"
-	"github.com/Metixpro/macron-agent/pkg/telegram"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/providers"
+	"github.com/SeniorAlfred/macron-agent/pkg/store"
+	"github.com/SeniorAlfred/macron-agent/pkg/telegram"
 )
 
 type effortLevel struct {

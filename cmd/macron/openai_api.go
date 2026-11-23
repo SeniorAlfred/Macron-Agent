@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/llm"
-	"github.com/Metixpro/macron-agent/pkg/providers"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/providers"
 )
 
 const (

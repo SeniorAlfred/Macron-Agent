@@ -7,10 +7,10 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/Metixpro/macron-agent/pkg/agent"
-	"github.com/Metixpro/macron-agent/pkg/telegram"
-	"github.com/Metixpro/macron-agent/pkg/textutil"
-	"github.com/Metixpro/macron-agent/pkg/tools"
+	"github.com/SeniorAlfred/macron-agent/pkg/agent"
+	"github.com/SeniorAlfred/macron-agent/pkg/telegram"
+	"github.com/SeniorAlfred/macron-agent/pkg/textutil"
+	"github.com/SeniorAlfred/macron-agent/pkg/tools"
 )
 
 const (

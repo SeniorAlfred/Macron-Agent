@@ -10,8 +10,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/Metixpro/macron-agent/pkg/guard"
-	"github.com/Metixpro/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/guard"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
 )
 
 const (

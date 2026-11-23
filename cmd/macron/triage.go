@@ -12,12 +12,12 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/Metixpro/macron-agent/pkg/agent"
-	"github.com/Metixpro/macron-agent/pkg/guard"
-	"github.com/Metixpro/macron-agent/pkg/llm"
-	"github.com/Metixpro/macron-agent/pkg/memory"
-	"github.com/Metixpro/macron-agent/pkg/router"
-	"github.com/Metixpro/macron-agent/pkg/telegram"
+	"github.com/SeniorAlfred/macron-agent/pkg/agent"
+	"github.com/SeniorAlfred/macron-agent/pkg/guard"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/memory"
+	"github.com/SeniorAlfred/macron-agent/pkg/router"
+	"github.com/SeniorAlfred/macron-agent/pkg/telegram"
 )
 
 const (

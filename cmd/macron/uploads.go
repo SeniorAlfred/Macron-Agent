@@ -10,7 +10,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/Metixpro/macron-agent/pkg/telegram"
+	"github.com/SeniorAlfred/macron-agent/pkg/telegram"
 )
 
 func (b *Bot) incomingDocument(ctx context.Context, session string, m *telegram.Message) (string, int64, error) {

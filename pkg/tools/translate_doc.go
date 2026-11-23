@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
 )
 
 const ToolTranslateDoc = "translate_document"

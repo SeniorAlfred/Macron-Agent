@@ -8,15 +8,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/agent"
-	"github.com/Metixpro/macron-agent/pkg/app"
-	"github.com/Metixpro/macron-agent/pkg/brain"
-	"github.com/Metixpro/macron-agent/pkg/config"
-	"github.com/Metixpro/macron-agent/pkg/llm"
-	"github.com/Metixpro/macron-agent/pkg/messenger"
-	"github.com/Metixpro/macron-agent/pkg/providers"
-	"github.com/Metixpro/macron-agent/pkg/store"
-	"github.com/Metixpro/macron-agent/pkg/telegram"
+	"github.com/SeniorAlfred/macron-agent/pkg/agent"
+	"github.com/SeniorAlfred/macron-agent/pkg/app"
+	"github.com/SeniorAlfred/macron-agent/pkg/brain"
+	"github.com/SeniorAlfred/macron-agent/pkg/config"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/messenger"
+	"github.com/SeniorAlfred/macron-agent/pkg/providers"
+	"github.com/SeniorAlfred/macron-agent/pkg/store"
+	"github.com/SeniorAlfred/macron-agent/pkg/telegram"
 )
 
 func startupCheck(args []string) bool {

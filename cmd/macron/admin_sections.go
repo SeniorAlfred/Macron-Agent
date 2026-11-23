@@ -10,12 +10,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/agent"
-	"github.com/Metixpro/macron-agent/pkg/emoji"
-	"github.com/Metixpro/macron-agent/pkg/llm"
-	"github.com/Metixpro/macron-agent/pkg/providers"
-	"github.com/Metixpro/macron-agent/pkg/store"
-	"github.com/Metixpro/macron-agent/pkg/telegram"
+	"github.com/SeniorAlfred/macron-agent/pkg/agent"
+	"github.com/SeniorAlfred/macron-agent/pkg/emoji"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/providers"
+	"github.com/SeniorAlfred/macron-agent/pkg/store"
+	"github.com/SeniorAlfred/macron-agent/pkg/telegram"
 )
 
 type (

@@ -280,7 +280,7 @@ func (t *sshTransport) start(context.Context) (io.WriteCloser, io.Reader, func()
 	return stdin, stdout, errs.String, nil
 }
 
-const installScript = `url=https://raw.githubusercontent.com/Metixpro/Macron-Agent/main/install.sh; ` +
+const installScript = `url=https://raw.githubusercontent.com/SeniorAlfred/Macron-Agent/main/install.sh; ` +
 	`if command -v curl >/dev/null 2>&1; then curl -fsSL "$url"; elif command -v wget >/dev/null 2>&1; then wget -qO- "$url"; ` +
 	`else echo "this machine has neither curl nor wget" >&2; exit 1; fi | bash -s -- --yes --no-setup --no-service`
 

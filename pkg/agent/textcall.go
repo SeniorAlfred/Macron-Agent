@@ -6,7 +6,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/Metixpro/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
 )
 
 type textCall struct {

@@ -5,8 +5,8 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/Metixpro/macron-agent/pkg/telegram"
-	"github.com/Metixpro/macron-agent/pkg/textutil"
+	"github.com/SeniorAlfred/macron-agent/pkg/telegram"
+	"github.com/SeniorAlfred/macron-agent/pkg/textutil"
 )
 
 func (b *Bot) replyContext(ctx context.Context, uid int64, m *telegram.Message, vision bool) *attachment {

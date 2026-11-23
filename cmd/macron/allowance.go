@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/Metixpro/macron-agent/pkg/tools"
+	"github.com/SeniorAlfred/macron-agent/pkg/tools"
 )
 
 func chosenFiles(files *fileTracker, box *outbox, allow *tools.Allowance) ([]string, int) {

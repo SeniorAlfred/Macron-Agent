@@ -9,10 +9,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/diskfree"
-	"github.com/Metixpro/macron-agent/pkg/store"
-	"github.com/Metixpro/macron-agent/pkg/sysmon"
-	"github.com/Metixpro/macron-agent/pkg/telegram"
+	"github.com/SeniorAlfred/macron-agent/pkg/diskfree"
+	"github.com/SeniorAlfred/macron-agent/pkg/store"
+	"github.com/SeniorAlfred/macron-agent/pkg/sysmon"
+	"github.com/SeniorAlfred/macron-agent/pkg/telegram"
 )
 
 const (

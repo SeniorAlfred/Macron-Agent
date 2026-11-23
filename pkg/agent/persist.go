@@ -6,7 +6,7 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/Metixpro/macron-agent/pkg/tools"
+	"github.com/SeniorAlfred/macron-agent/pkg/tools"
 )
 
 const noticePersist = "[system notice] Don't give up yet: a step failed, but there is budget left. Before answering, try another real " +

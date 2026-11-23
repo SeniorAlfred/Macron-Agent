@@ -14,8 +14,8 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/Metixpro/macron-agent/pkg/app"
-	"github.com/Metixpro/macron-agent/pkg/updater"
+	"github.com/SeniorAlfred/macron-agent/pkg/app"
+	"github.com/SeniorAlfred/macron-agent/pkg/updater"
 )
 
 var binaryDir, binaryPath string

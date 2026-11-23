@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 
-	"github.com/Metixpro/macron-agent/pkg/providers"
+	"github.com/SeniorAlfred/macron-agent/pkg/providers"
 )
 
 type tierID string

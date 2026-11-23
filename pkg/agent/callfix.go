@@ -10,7 +10,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/Metixpro/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
 )
 
 type callFix struct {

@@ -3,9 +3,9 @@ package agent
 import (
 	"context"
 	"fmt"
-	"github.com/Metixpro/macron-agent/pkg/llm"
-	"github.com/Metixpro/macron-agent/pkg/machine"
-	"github.com/Metixpro/macron-agent/pkg/tools"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/machine"
+	"github.com/SeniorAlfred/macron-agent/pkg/tools"
 	"testing"
 )
 

@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/Metixpro/macron-agent/pkg/cmdgate"
+	"github.com/SeniorAlfred/macron-agent/pkg/cmdgate"
 )
 
 func (r *Registry) gateAction(ctx context.Context, sessionID string, a cmdgate.Action) string {

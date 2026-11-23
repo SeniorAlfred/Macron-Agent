@@ -19,9 +19,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/netclient"
-	"github.com/Metixpro/macron-agent/pkg/store"
-	"github.com/Metixpro/macron-agent/pkg/tools"
+	"github.com/SeniorAlfred/macron-agent/pkg/netclient"
+	"github.com/SeniorAlfred/macron-agent/pkg/store"
+	"github.com/SeniorAlfred/macron-agent/pkg/tools"
 )
 
 type cookiePool struct {

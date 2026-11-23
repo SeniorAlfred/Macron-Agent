@@ -13,8 +13,8 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/Metixpro/macron-agent/pkg/machine"
-	"github.com/Metixpro/macron-agent/pkg/textutil"
+	"github.com/SeniorAlfred/macron-agent/pkg/machine"
+	"github.com/SeniorAlfred/macron-agent/pkg/textutil"
 )
 
 const piperRetry = 10 * time.Minute

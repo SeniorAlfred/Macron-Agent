@@ -12,15 +12,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/app"
-	"github.com/Metixpro/macron-agent/pkg/config"
-	"github.com/Metixpro/macron-agent/pkg/diskfree"
-	"github.com/Metixpro/macron-agent/pkg/llm"
-	"github.com/Metixpro/macron-agent/pkg/moa"
-	"github.com/Metixpro/macron-agent/pkg/providers"
-	"github.com/Metixpro/macron-agent/pkg/store"
-	"github.com/Metixpro/macron-agent/pkg/telegram"
-	"github.com/Metixpro/macron-agent/pkg/updater"
+	"github.com/SeniorAlfred/macron-agent/pkg/app"
+	"github.com/SeniorAlfred/macron-agent/pkg/config"
+	"github.com/SeniorAlfred/macron-agent/pkg/diskfree"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/moa"
+	"github.com/SeniorAlfred/macron-agent/pkg/providers"
+	"github.com/SeniorAlfred/macron-agent/pkg/store"
+	"github.com/SeniorAlfred/macron-agent/pkg/telegram"
+	"github.com/SeniorAlfred/macron-agent/pkg/updater"
 )
 
 type level int
@@ -137,6 +137,7 @@ func doctor(io *IO, args []string) int {
 			r.line(warn, f+" is not there yet", "it is written the first time the agent starts")
 		}
 	}
+	checkExecution(runtime.GOOS, doctorValue(env, config.EnvExecutionMode), r)
 
 	token := doctorValue(env, keyToken)
 	owners := doctorValue(env, keyOwners)
@@ -254,6 +255,32 @@ func doctorValue(env *envFile, key string) string {
 		return value
 	}
 	return getEnv(env, key)
+}
+
+// checkExecution tells the truth about isolation: bubblewrap is the only
+// backend, so everywhere else commands run with the user's own privileges.
+func checkExecution(goos, mode string, r *report) {
+	mode = strings.TrimSpace(strings.ToLower(mode))
+	if mode == "" {
+		mode = "best-effort"
+	}
+	_, err := exec.LookPath("bwrap")
+	haveBwrap := err == nil
+	switch {
+	case mode == "sandbox" && haveBwrap:
+		r.line(ok, "execution: sandbox (bubblewrap) — commands run isolated", "")
+	case mode == "sandbox":
+		hint := "install bubblewrap (apt install bubblewrap) or set MACRON_EXECUTION_MODE=best-effort"
+		if goos != "linux" {
+			hint = "bubblewrap is Linux-only; set MACRON_EXECUTION_MODE=best-effort or local"
+		}
+		r.line(fail, "execution: sandbox is required but no sandbox backend is available", hint)
+	case haveBwrap:
+		r.line(warn, "execution: "+mode+" — commands are not isolated although bubblewrap is installed",
+			"set MACRON_EXECUTION_MODE=sandbox to run them in the sandbox")
+	default:
+		r.line(warn, "execution: "+mode+" — no kernel sandbox here (bubblewrap is Linux-only)", "")
+	}
 }
 
 func getEnvDefault(env *envFile, key, def string) string {

@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/Metixpro/macron-agent/pkg/cmdgate"
+	"github.com/SeniorAlfred/macron-agent/pkg/cmdgate"
 	"log"
 	"runtime/debug"
 	"slices"
@@ -16,10 +16,10 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/Metixpro/macron-agent/pkg/llm"
-	"github.com/Metixpro/macron-agent/pkg/skills"
-	"github.com/Metixpro/macron-agent/pkg/textutil"
-	"github.com/Metixpro/macron-agent/pkg/tools"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/skills"
+	"github.com/SeniorAlfred/macron-agent/pkg/textutil"
+	"github.com/SeniorAlfred/macron-agent/pkg/tools"
 )
 
 type EventListener struct {

@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/Metixpro/macron-agent/pkg/config"
+	"github.com/SeniorAlfred/macron-agent/pkg/config"
 	"io"
 	"math"
 	"net"
@@ -22,9 +22,9 @@ import (
 
 	"golang.org/x/net/idna"
 
-	"github.com/Metixpro/macron-agent/pkg/guard"
-	"github.com/Metixpro/macron-agent/pkg/machine"
-	"github.com/Metixpro/macron-agent/pkg/textutil"
+	"github.com/SeniorAlfred/macron-agent/pkg/guard"
+	"github.com/SeniorAlfred/macron-agent/pkg/machine"
+	"github.com/SeniorAlfred/macron-agent/pkg/textutil"
 )
 
 var (

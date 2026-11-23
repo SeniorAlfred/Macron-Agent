@@ -10,7 +10,7 @@ import (
 	"github.com/charmbracelet/lipgloss"
 	"github.com/charmbracelet/x/ansi"
 
-	"github.com/Metixpro/macron-agent/pkg/agent"
+	"github.com/SeniorAlfred/macron-agent/pkg/agent"
 )
 
 type commandMsg struct{ text string }

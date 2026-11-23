@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/plugins"
-	"github.com/Metixpro/macron-agent/pkg/tui"
+	"github.com/SeniorAlfred/macron-agent/pkg/plugins"
+	"github.com/SeniorAlfred/macron-agent/pkg/tui"
 )
 
 var slugRe = regexp.MustCompile(`[^a-z0-9_-]+`)

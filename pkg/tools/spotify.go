@@ -20,9 +20,9 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/Metixpro/macron-agent/pkg/machine"
-	"github.com/Metixpro/macron-agent/pkg/netclient"
-	"github.com/Metixpro/macron-agent/pkg/textutil"
+	"github.com/SeniorAlfred/macron-agent/pkg/machine"
+	"github.com/SeniorAlfred/macron-agent/pkg/netclient"
+	"github.com/SeniorAlfred/macron-agent/pkg/textutil"
 	"golang.org/x/text/unicode/norm"
 )
 

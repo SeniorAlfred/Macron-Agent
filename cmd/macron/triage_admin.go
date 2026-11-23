@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/router"
-	"github.com/Metixpro/macron-agent/pkg/telegram"
+	"github.com/SeniorAlfred/macron-agent/pkg/router"
+	"github.com/SeniorAlfred/macron-agent/pkg/telegram"
 )
 
 func triageModeName(l lang, mode string) string {

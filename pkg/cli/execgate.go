@@ -8,10 +8,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/cmdgate"
-	"github.com/Metixpro/macron-agent/pkg/config"
-	"github.com/Metixpro/macron-agent/pkg/llm"
-	"github.com/Metixpro/macron-agent/pkg/store"
+	"github.com/SeniorAlfred/macron-agent/pkg/cmdgate"
+	"github.com/SeniorAlfred/macron-agent/pkg/config"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/store"
 )
 
 func execGate(term *IO, client llm.ChatClient, dbPath, workDir string, yolo bool) (*cmdgate.Gate, func()) {

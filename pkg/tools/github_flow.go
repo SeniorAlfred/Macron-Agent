@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/Metixpro/macron-agent/pkg/config"
+	"github.com/SeniorAlfred/macron-agent/pkg/config"
 )
 
 const ToolGitHubWorkflow = "github_workflow"

@@ -12,14 +12,14 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/Metixpro/macron-agent/pkg/agent"
-	"github.com/Metixpro/macron-agent/pkg/config"
-	"github.com/Metixpro/macron-agent/pkg/guard"
-	"github.com/Metixpro/macron-agent/pkg/memory"
-	"github.com/Metixpro/macron-agent/pkg/store"
-	"github.com/Metixpro/macron-agent/pkg/telegram"
-	"github.com/Metixpro/macron-agent/pkg/textutil"
-	"github.com/Metixpro/macron-agent/pkg/tools"
+	"github.com/SeniorAlfred/macron-agent/pkg/agent"
+	"github.com/SeniorAlfred/macron-agent/pkg/config"
+	"github.com/SeniorAlfred/macron-agent/pkg/guard"
+	"github.com/SeniorAlfred/macron-agent/pkg/memory"
+	"github.com/SeniorAlfred/macron-agent/pkg/store"
+	"github.com/SeniorAlfred/macron-agent/pkg/telegram"
+	"github.com/SeniorAlfred/macron-agent/pkg/textutil"
+	"github.com/SeniorAlfred/macron-agent/pkg/tools"
 )
 
 const statsQueryTime = 15 * time.Second

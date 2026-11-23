@@ -8,8 +8,8 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/app"
-	"github.com/Metixpro/macron-agent/pkg/updater"
+	"github.com/SeniorAlfred/macron-agent/pkg/app"
+	"github.com/SeniorAlfred/macron-agent/pkg/updater"
 )
 
 func update(io *IO, args []string) int {

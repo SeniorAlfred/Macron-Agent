@@ -5,7 +5,7 @@ import (
 	"embed"
 	"encoding/json"
 	"fmt"
-	"github.com/Metixpro/macron-agent/pkg/cmdgate"
+	"github.com/SeniorAlfred/macron-agent/pkg/cmdgate"
 	"log"
 	"net/http"
 	"runtime/debug"
@@ -15,15 +15,20 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/llm"
-	"github.com/Metixpro/macron-agent/pkg/machine"
-	"github.com/Metixpro/macron-agent/pkg/netclient"
-	"github.com/Metixpro/macron-agent/pkg/search"
-	"github.com/Metixpro/macron-agent/pkg/skills"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/machine"
+	"github.com/SeniorAlfred/macron-agent/pkg/netclient"
+	"github.com/SeniorAlfred/macron-agent/pkg/search"
+	"github.com/SeniorAlfred/macron-agent/pkg/skills"
 )
 
 //go:embed scripts/*.py
 var scriptFS embed.FS
+
+// fallbackHTTP is used when a caller did not supply a client. Unlike
+// http.DefaultClient it has a real timeout, while still honouring the proxy
+// environment the way the default client did.
+var fallbackHTTP = netclient.NewClient(netclient.Options{Timeout: 90 * time.Second, UseEnvProxy: true})
 
 const MaxToolOutput = 15000
 

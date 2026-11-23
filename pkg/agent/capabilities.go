@@ -3,7 +3,7 @@ package agent
 import (
 	"strings"
 
-	"github.com/Metixpro/macron-agent/pkg/tools"
+	"github.com/SeniorAlfred/macron-agent/pkg/tools"
 )
 
 type capability struct {

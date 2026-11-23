@@ -7,7 +7,7 @@ import (
 
 	"golang.org/x/net/html"
 
-	"github.com/Metixpro/macron-agent/pkg/textutil"
+	"github.com/SeniorAlfred/macron-agent/pkg/textutil"
 )
 
 var boilerRe = regexp.MustCompile(`(?i)(?:^|[\s_-])(?:nav|navbar|navigation|menu|menubar|breadcrumbs?|footer|sidebar|side-bar|cookies?|consent|` +

@@ -4,11 +4,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Metixpro/macron-agent/pkg/agent"
-	"github.com/Metixpro/macron-agent/pkg/memory"
-	"github.com/Metixpro/macron-agent/pkg/providers"
-	"github.com/Metixpro/macron-agent/pkg/store"
-	"github.com/Metixpro/macron-agent/pkg/textutil"
+	"github.com/SeniorAlfred/macron-agent/pkg/agent"
+	"github.com/SeniorAlfred/macron-agent/pkg/memory"
+	"github.com/SeniorAlfred/macron-agent/pkg/providers"
+	"github.com/SeniorAlfred/macron-agent/pkg/store"
+	"github.com/SeniorAlfred/macron-agent/pkg/textutil"
 )
 
 const settingContextWindow = "context_window"

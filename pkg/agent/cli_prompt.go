@@ -5,7 +5,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/Metixpro/macron-agent/pkg/machine"
+	"github.com/SeniorAlfred/macron-agent/pkg/machine"
 )
 
 func (a *Agent) cliPrompt(offers func(string) bool) string {

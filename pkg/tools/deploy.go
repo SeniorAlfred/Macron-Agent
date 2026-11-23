@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/machine"
+	"github.com/SeniorAlfred/macron-agent/pkg/machine"
 )
 
 const ToolDeployService = "deploy_service"
@@ -20,7 +20,7 @@ func (r *Registry) DeployWithRollback(ctx context.Context, sessionID, deployCmd,
 
 	client := r.HTTP
 	if client == nil {
-		client = http.DefaultClient
+		client = fallbackHTTP
 	}
 
 	deployOpts := machine.RunOptions{

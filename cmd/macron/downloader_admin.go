@@ -14,11 +14,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/diskfree"
-	"github.com/Metixpro/macron-agent/pkg/guard"
-	"github.com/Metixpro/macron-agent/pkg/telegram"
-	"github.com/Metixpro/macron-agent/pkg/textutil"
-	"github.com/Metixpro/macron-agent/pkg/tools"
+	"github.com/SeniorAlfred/macron-agent/pkg/diskfree"
+	"github.com/SeniorAlfred/macron-agent/pkg/guard"
+	"github.com/SeniorAlfred/macron-agent/pkg/telegram"
+	"github.com/SeniorAlfred/macron-agent/pkg/textutil"
+	"github.com/SeniorAlfred/macron-agent/pkg/tools"
 )
 
 const settingDLCookies = "dl_cookies"

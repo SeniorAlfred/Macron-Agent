@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	"github.com/Metixpro/macron-agent/pkg/telegram"
+	"github.com/SeniorAlfred/macron-agent/pkg/telegram"
 )
 
 func (b *Bot) notifyLog(ctx context.Context, html string) {

@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Metixpro/macron-agent/pkg/config"
+	"github.com/SeniorAlfred/macron-agent/pkg/config"
 )
 
 func TestLogTail(t *testing.T) {

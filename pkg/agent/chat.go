@@ -4,7 +4,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/Metixpro/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
 )
 
 const toolUseTools = "use_tools"

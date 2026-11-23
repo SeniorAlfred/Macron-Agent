@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Metixpro/macron-agent/pkg/app"
+	"github.com/SeniorAlfred/macron-agent/pkg/app"
 )
 
 func (b *Bot) ownerNote(owner bool, conf tierConf) string {

@@ -9,8 +9,8 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/Metixpro/macron-agent/pkg/sched"
-	"github.com/Metixpro/macron-agent/pkg/telegram"
+	"github.com/SeniorAlfred/macron-agent/pkg/sched"
+	"github.com/SeniorAlfred/macron-agent/pkg/telegram"
 )
 
 type lang uint8

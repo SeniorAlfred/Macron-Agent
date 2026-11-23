@@ -8,9 +8,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/Metixpro/macron-agent/pkg/app"
-	"github.com/Metixpro/macron-agent/pkg/config"
-	"github.com/Metixpro/macron-agent/pkg/machine"
+	"github.com/SeniorAlfred/macron-agent/pkg/app"
+	"github.com/SeniorAlfred/macron-agent/pkg/config"
+	"github.com/SeniorAlfred/macron-agent/pkg/machine"
 )
 
 func TestApplySavedExecutionMode_LoadsFromStoreWhenEnvUnset(t *testing.T) {

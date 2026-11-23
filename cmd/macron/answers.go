@@ -5,8 +5,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/Metixpro/macron-agent/pkg/agent"
-	"github.com/Metixpro/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/agent"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
 )
 
 func fileNote(delivered []string) string {

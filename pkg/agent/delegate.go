@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/Metixpro/macron-agent/pkg/cmdgate"
+	"github.com/SeniorAlfred/macron-agent/pkg/cmdgate"
 	"maps"
 	"path"
 	"sort"
@@ -12,10 +12,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/llm"
-	"github.com/Metixpro/macron-agent/pkg/machine"
-	"github.com/Metixpro/macron-agent/pkg/textutil"
-	"github.com/Metixpro/macron-agent/pkg/tools"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/machine"
+	"github.com/SeniorAlfred/macron-agent/pkg/textutil"
+	"github.com/SeniorAlfred/macron-agent/pkg/tools"
 )
 
 const ToolDelegate = "delegate_task"

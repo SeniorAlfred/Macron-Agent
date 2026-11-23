@@ -7,7 +7,7 @@ import (
 	"slices"
 	"sort"
 
-	"github.com/Metixpro/macron-agent/pkg/telegram"
+	"github.com/SeniorAlfred/macron-agent/pkg/telegram"
 )
 
 type commandRole uint8

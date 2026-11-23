@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/Metixpro/macron-agent/pkg/guard"
+	"github.com/SeniorAlfred/macron-agent/pkg/guard"
 	"io/fs"
 	"path/filepath"
 	"sync"

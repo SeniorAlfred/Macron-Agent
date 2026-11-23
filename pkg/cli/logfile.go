@@ -11,7 +11,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/config"
+	"github.com/SeniorAlfred/macron-agent/pkg/config"
 )
 
 // readLogTail seeks backwards, so following a large log does not load it all.

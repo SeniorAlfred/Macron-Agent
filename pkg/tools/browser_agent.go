@@ -20,7 +20,7 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/Metixpro/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
 )
 
 const (
@@ -60,6 +60,7 @@ func (r *Registry) registerBrowserAgent() {
 		return
 	}
 	if r.browser.agentPython = r.findAgentPython(); r.browser.agentPython == "" {
+		log.Printf("🤖 browser_agent is off: no browser-use environment was found (add it with: install.sh --browser-agent, about 1 GB)")
 		return
 	}
 	r.browser.agents = make(chan struct{}, agentRunsAtOnce)

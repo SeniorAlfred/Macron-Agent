@@ -3,7 +3,7 @@ package main
 import (
 	"unicode/utf8"
 
-	"github.com/Metixpro/macron-agent/pkg/telegram"
+	"github.com/SeniorAlfred/macron-agent/pkg/telegram"
 )
 
 const (

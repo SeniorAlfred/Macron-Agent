@@ -7,7 +7,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/telegram"
+	"github.com/SeniorAlfred/macron-agent/pkg/telegram"
 )
 
 const textNotYourPanel = "این دکمه‌ها مال کسیه که دستور رو زده؛ اگه خودت می‌خوای، همون دستور رو بفرست 🙂"

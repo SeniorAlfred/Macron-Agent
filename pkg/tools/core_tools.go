@@ -17,10 +17,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/machine"
-	"github.com/Metixpro/macron-agent/pkg/netclient"
-	"github.com/Metixpro/macron-agent/pkg/search"
-	"github.com/Metixpro/macron-agent/pkg/textutil"
+	"github.com/SeniorAlfred/macron-agent/pkg/machine"
+	"github.com/SeniorAlfred/macron-agent/pkg/netclient"
+	"github.com/SeniorAlfred/macron-agent/pkg/search"
+	"github.com/SeniorAlfred/macron-agent/pkg/textutil"
 )
 
 var maxDownloadBytes int64 = 100 << 20

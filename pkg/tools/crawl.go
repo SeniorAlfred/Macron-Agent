@@ -12,7 +12,7 @@ import (
 
 	"golang.org/x/net/html"
 
-	"github.com/Metixpro/macron-agent/pkg/netclient"
+	"github.com/SeniorAlfred/macron-agent/pkg/netclient"
 )
 
 const ToolCrawlSite = "crawl_site"
@@ -31,7 +31,7 @@ var skipExt = map[string]bool{".jpg": true, ".jpeg": true, ".png": true, ".gif":
 func (r *Registry) pageLinks(ctx context.Context, page *url.URL) []*url.URL {
 	client := r.HTTP
 	if client == nil {
-		client = http.DefaultClient
+		client = fallbackHTTP
 	}
 	req, err := http.NewRequestWithContext(ctx, http.MethodGet, page.String(), nil)
 	if err != nil {

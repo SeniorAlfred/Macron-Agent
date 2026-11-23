@@ -4,7 +4,7 @@ import (
 	"context"
 	"io/fs"
 
-	"github.com/Metixpro/macron-agent/pkg/agent"
+	"github.com/SeniorAlfred/macron-agent/pkg/agent"
 )
 
 type Info struct {

@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/Metixpro/macron-agent/pkg/config"
+	"github.com/SeniorAlfred/macron-agent/pkg/config"
 	"io"
 	"net/http"
 	"strings"
@@ -24,7 +24,7 @@ func (r *Registry) SendExternalMessenger(ctx context.Context, platform, webhookU
 
 	client := r.HTTP
 	if client == nil {
-		client = http.DefaultClient
+		client = fallbackHTTP
 	}
 
 	switch platform {

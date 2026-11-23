@@ -15,8 +15,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Metixpro/macron-agent/pkg/agent"
-	"github.com/Metixpro/macron-agent/pkg/updater"
+	"github.com/SeniorAlfred/macron-agent/pkg/agent"
+	"github.com/SeniorAlfred/macron-agent/pkg/updater"
 )
 
 type fakeSession struct {
@@ -312,7 +312,7 @@ func TestManageAndUpdateAPIs(t *testing.T) {
 	// GitHub update check against mock release server
 	gh := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
-		_, _ = w.Write([]byte(`{"tag_name":"v9.9.9","html_url":"https://github.com/Metixpro/Macron-Agent/releases/tag/v9.9.9","body":"New release notes"}`))
+		_, _ = w.Write([]byte(`{"tag_name":"v9.9.9","html_url":"https://github.com/SeniorAlfred/Macron-Agent/releases/tag/v9.9.9","body":"New release notes"}`))
 	}))
 	defer gh.Close()
 	origAPI := updater.ReleaseAPI

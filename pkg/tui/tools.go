@@ -11,7 +11,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/Metixpro/macron-agent/pkg/agent"
+	"github.com/SeniorAlfred/macron-agent/pkg/agent"
 )
 
 var toolTitles = map[string]string{

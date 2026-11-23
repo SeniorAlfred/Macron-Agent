@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/Metixpro/macron-agent/pkg/memory"
-	"github.com/Metixpro/macron-agent/pkg/store"
+	"github.com/SeniorAlfred/macron-agent/pkg/memory"
+	"github.com/SeniorAlfred/macron-agent/pkg/store"
 )
 
 func (b *Bot) contextCarry(ctx context.Context, uid int64, mc *memory.Context) (tokens int, compacted bool) {

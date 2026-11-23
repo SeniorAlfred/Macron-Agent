@@ -4,7 +4,7 @@ import (
 	"context"
 	"sort"
 
-	"github.com/Metixpro/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
 )
 
 type PluginTools interface {

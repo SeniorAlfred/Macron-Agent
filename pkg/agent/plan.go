@@ -8,8 +8,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/Metixpro/macron-agent/pkg/llm"
-	"github.com/Metixpro/macron-agent/pkg/textutil"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/textutil"
 )
 
 const ToolPlan = "update_plan"

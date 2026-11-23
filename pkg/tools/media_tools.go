@@ -9,11 +9,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/machine"
-	"github.com/Metixpro/macron-agent/pkg/textutil"
+	"github.com/SeniorAlfred/macron-agent/pkg/machine"
+	"github.com/SeniorAlfred/macron-agent/pkg/textutil"
 )
 
-const wikimediaUA = "Macron-Agent/1.0 (+https://github.com/Metixpro/macron-agent)"
+const wikimediaUA = "Macron-Agent/1.0 (+https://github.com/SeniorAlfred/macron-agent)"
 
 var (
 	imageExts = []string{".jpg", ".jpeg", ".png", ".webp"}

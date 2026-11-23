@@ -8,9 +8,9 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/Metixpro/macron-agent/pkg/guard"
-	"github.com/Metixpro/macron-agent/pkg/netclient"
-	"github.com/Metixpro/macron-agent/pkg/textutil"
+	"github.com/SeniorAlfred/macron-agent/pkg/guard"
+	"github.com/SeniorAlfred/macron-agent/pkg/netclient"
+	"github.com/SeniorAlfred/macron-agent/pkg/textutil"
 )
 
 const (

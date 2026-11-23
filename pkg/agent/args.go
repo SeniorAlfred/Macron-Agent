@@ -8,8 +8,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/Metixpro/macron-agent/pkg/llm"
-	"github.com/Metixpro/macron-agent/pkg/textutil"
+	"github.com/SeniorAlfred/macron-agent/pkg/llm"
+	"github.com/SeniorAlfred/macron-agent/pkg/textutil"
 )
 
 func prepareCall(name, raw string, defs map[string]llm.ToolDef) (args string, problem string) {

@@ -15,7 +15,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/Metixpro/macron-agent/pkg/config"
+	"github.com/SeniorAlfred/macron-agent/pkg/config"
 )
 
 var httpStatusRe = regexp.MustCompile(`\(HTTP (\d{3})\)`)
