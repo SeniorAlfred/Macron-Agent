@@ -1,6 +1,6 @@
 # Tests / تست‌ها
 
-Run the public regression suite from a checkout with Go 1.26.11 or newer:
+Run the public regression suite from a checkout with Go 1.26 or newer:
 
 ```sh
 make test
