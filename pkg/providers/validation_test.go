@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/SeniorAlfred/macron-agent/pkg/llm"
-	"github.com/SeniorAlfred/macron-agent/pkg/store"
+	"github.com/Metixpro/macron-agent/pkg/llm"
+	"github.com/Metixpro/macron-agent/pkg/store"
 )
 
 func TestValidateBaseURL(t *testing.T) {
