@@ -493,6 +493,12 @@ other sessions' workspaces are invisible, and only the workspace (with the termi
 interface, the project folder) and build caches (`~/.cache`, `~/go`, `~/.npm`,
 `~/.cargo`…) are writable. `MACRON_SANDBOX_NO_NET=1` also cuts the network.
 
+bubblewrap is the only sandbox backend the program has, and it is Linux-only.
+On macOS and Windows `MACRON_EXECUTION_MODE=sandbox` fails closed at startup
+rather than pretending to isolate anything; `best-effort` (the default) and
+`local` run commands as your own user with no kernel-level isolation, so the
+approval gate and a dedicated account remain the real boundary there.
+
 A question the agent asks with a poll now survives a restart (kept in the
 database for the poll's lifetime). Before saying it is done after changing code,
 the agent checks it once (tests, a build, or a run without side effects) when
