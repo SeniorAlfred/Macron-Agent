@@ -2,7 +2,7 @@ $ErrorActionPreference = 'Stop'
 $ProgressPreference = 'SilentlyContinue'
 try { [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12 } catch {}
 
-$Repo = 'Metixpro/Macron-Agent'
+$Repo = 'SeniorAlfred/Macron-Agent'
 $Dest = Join-Path $env:LOCALAPPDATA 'Programs\Macron'
 $Menu = Join-Path ([Environment]::GetFolderPath('Programs')) 'Macron.lnk'
 
