@@ -12,15 +12,15 @@ A personal AI agent built in Go for Windows, Linux, and macOS — across Desktop
 
 <br>
 
-[![Release](https://img.shields.io/github/v/release/Metixpro/Macron-Agent?style=flat-square&color=55c9a5&labelColor=111820)](https://github.com/Metixpro/Macron-Agent/releases/latest)
-[![CI](https://img.shields.io/github/actions/workflow/status/Metixpro/Macron-Agent/ci.yml?branch=main&style=flat-square&label=CI&labelColor=111820)](https://github.com/Metixpro/Macron-Agent/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/SeniorAlfred/Macron-Agent?style=flat-square&color=55c9a5&labelColor=111820)](https://github.com/SeniorAlfred/Macron-Agent/releases/latest)
+[![CI](https://img.shields.io/github/actions/workflow/status/SeniorAlfred/Macron-Agent/ci.yml?branch=main&style=flat-square&label=CI&labelColor=111820)](https://github.com/SeniorAlfred/Macron-Agent/actions/workflows/ci.yml)
 [![Go](https://img.shields.io/badge/Go-1.26+-00ADD8?style=flat-square&logo=go&logoColor=white&labelColor=111820)](go.mod)
 [![License: MIT](https://img.shields.io/badge/License-MIT-55c9a5?style=flat-square&labelColor=111820)](LICENSE)
-[![Platforms](https://img.shields.io/badge/Windows%20%C2%B7%20Linux%20%C2%B7%20macOS-3b4754?style=flat-square&labelColor=111820)](https://github.com/Metixpro/Macron-Agent/releases/latest)
+[![Platforms](https://img.shields.io/badge/Windows%20%C2%B7%20Linux%20%C2%B7%20macOS-3b4754?style=flat-square&labelColor=111820)](https://github.com/SeniorAlfred/Macron-Agent/releases/latest)
 
 <br>
 
-**[راهنمای فارسی](#persian)** · **[English Guide](#english)** · **[Downloads / دریافت](https://github.com/Metixpro/Macron-Agent/releases/latest)** · **[Server Guide](SERVER.md)** · **[Connections](docs/messengers-email.md)** · **[Testing](docs/testing.md)**
+**[راهنمای فارسی](#persian)** · **[English Guide](#english)** · **[Downloads / دریافت](https://github.com/SeniorAlfred/Macron-Agent/releases/latest)** · **[Server Guide](SERVER.md)** · **[Connections](docs/messengers-email.md)** · **[Testing](docs/testing.md)**
 
 </div>
 
@@ -30,8 +30,8 @@ A personal AI agent built in Go for Windows, Linux, and macOS — across Desktop
 
 | Platform · سیستم‌عامل | Install · نصب | Launch · اجرا |
 |---|---|---|
-| **Windows** | [Download `Macron-Setup.exe`](https://github.com/Metixpro/Macron-Agent/releases/latest) or `irm …/install.ps1 \| iex` | Start menu → **Macron** · **Macron Terminal** |
-| **Linux / macOS** | `curl -fsSL https://raw.githubusercontent.com/Metixpro/Macron-Agent/main/install.sh \| bash` | `macron desktop` · `macron` |
+| **Windows** | [Download `Macron-Setup.exe`](https://github.com/SeniorAlfred/Macron-Agent/releases/latest) or `irm …/install.ps1 \| iex` | Start menu → **Macron** · **Macron Terminal** |
+| **Linux / macOS** | `curl -fsSL https://raw.githubusercontent.com/SeniorAlfred/Macron-Agent/main/install.sh \| bash` | `macron desktop` · `macron` |
 | **Server / سرور** | [Server setup guide](SERVER.md) | SSH from Desktop · Telegram · `macron exec` |
 
 ## Interface Preview · پیش‌نمایش محیط کار
@@ -65,7 +65,7 @@ A personal AI agent built in Go for Windows, Linux, and macOS — across Desktop
 |---|---|
 | **سه محیط یکپارچه** | اپلیکیشن دسکتاپ بومی، محیط ترمینال تعاملی (TUI) و ربات تلگرام — همگی روی یک موتور واحد |
 | **اپ دسکتاپ پیشرفته (`v1.16.0`)** | رابط کاربری دوزبانه **فارسی / انگلیسی** با RTL هوشمند، پنل تغییرات Git و Diff رنگی، منشن `@file`، پیوست فایل و عکس (Drag & Drop و `Ctrl+V`)، تاریخچه چندمکالمه‌ای برای هر پروژه، مدیریت Skills/Memory/Connections از داخل Settings و آپدیت خودکار از GitHub Releases |
-| **امنیت و کنترل واقعی** | حالت‌های **Build** و **Plan** (فقط‌خواندنی)، تأیید دستورات پرخطر (Smart / Always ask / Never ask)، کنترل حالت اجرا (**Sandbox / Best-effort / Local** با پشتیبانی bubblewrap، Landlock و Seatbelt) و حالت موقت YOLO |
+| **امنیت و کنترل واقعی** | حالت‌های **Build** و **Plan** (فقط‌خواندنی)، تأیید دستورات پرخطر (Smart / Always ask / Never ask)، کنترل حالت اجرا (**Sandbox / Best-effort / Local**) و حالت موقت YOLO. سندباکس واقعی با **bubblewrap** روی لینوکس اجرا می‌شود؛ روی مک و ویندوز سندباکس هسته‌ای وجود ندارد و حالت `sandbox` به‌جای اجرای بدون محافظ، از شروع کار امتناع می‌کند |
 | **کار روی سرور بدون باز کردن پورت** | اتصال مستقیم دسکتاپ به سرورهای Linux/SSH و WSL روی تونل رمزشده SSH با تأیید اثر انگشت (`~/.ssh/known_hosts`) |
 | **حافظه و مهارت‌های دست خودت** | تمام داده‌ها به صورت فایل‌های شفاف و قابل ویرایش (`SOUL.md`، `USER.md`، `MEMORY.md`، `skills/` و SQLite) داخل پروفایل خودت ذخیره می‌شوند |
 
@@ -76,7 +76,7 @@ A personal AI agent built in Go for Windows, Linux, and macOS — across Desktop
 #### لینوکس و مک (Linux / macOS)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Metixpro/Macron-Agent/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/SeniorAlfred/Macron-Agent/main/install.sh | bash
 ```
 
 - در شروع، نوع نصب را انتخاب کن: **کاربر فعلی** (بدون نیاز به `sudo`) یا **سیستمی (root)**.
@@ -84,7 +84,7 @@ curl -fsSL https://raw.githubusercontent.com/Metixpro/Macron-Agent/main/install.
 
 #### ویندوز (Windows)
 
-فایل `Macron-Setup-….exe` را از [صفحه آخرین نسخه](https://github.com/Metixpro/Macron-Agent/releases/latest) دانلود و اجرا کن:
+فایل `Macron-Setup-….exe` را از [صفحه آخرین نسخه](https://github.com/SeniorAlfred/Macron-Agent/releases/latest) دانلود و اجرا کن:
 - یک نصب‌کننده واحد برای تمام سیستم‌های ویندوزی (`x64`، `x86` و `ARM64` را خودکار تشخیص می‌دهد).
 - بدون نیاز به دسترسی ادمین در `%LOCALAPPDATA%\Programs\Macron` نصب می‌شود، هم **Macron Desktop** و هم **Macron Terminal** را نصب می‌کند و از بخش Apps ویندوز قابل حذف است.
 - گفتگوها و تنظیمات در `~\.macron` نگهداری می‌شوند. به دلیل نداشتن امضای دیجیتال تجاری، در صورت نمایش هشدار SmartScreen روی **More info → Run anyway** کلیک کن.
@@ -92,7 +92,7 @@ curl -fsSL https://raw.githubusercontent.com/Metixpro/Macron-Agent/main/install.
 یا نصب سریع از PowerShell:
 
 ```powershell
-irm https://raw.githubusercontent.com/Metixpro/Macron-Agent/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/SeniorAlfred/Macron-Agent/main/install.ps1 | iex
 ```
 
 ---
@@ -220,7 +220,7 @@ macron uninstall --dry-run
 macron uninstall
 
 # ساخت از سورس (نیاز به Git، Make و Go 1.26+)
-git clone https://github.com/Metixpro/Macron-Agent.git
+git clone https://github.com/SeniorAlfred/Macron-Agent.git
 cd Macron-Agent
 make build
 make check        # تست و بررسی تطابق باندل UI
@@ -228,7 +228,7 @@ make audit        # تحلیل ایستا و بررسی آسیب‌پذیری‌
 make test-race    # تست‌های رگرسیون همراه با race detector
 ```
 
-برای آماده‌سازی ابزارها و مرورگر از سورس: `./install.sh --binary ./bin/macron --tools --browser-agent --no-setup`. جزئیات استقرار سرور و بازیابی در [SERVER.md](SERVER.md) آمده است.
+برای آماده‌سازی ابزارها و مرورگر از سورس: `./install.sh --binary ./bin/macron --tools --browser-agent --no-setup`. توجه: `--browser-agent` اختیاری و سنگین است (حدود ۱ گیگابایت، چون `browser-use` و SDKهای مدل را جداگانه نصب می‌کند)؛ اگر فقط ابزارهای سند، رسانه و داده را می‌خواهی، همان `--tools` کافی است. جزئیات استقرار سرور و بازیابی در [SERVER.md](SERVER.md) آمده است.
 
 ---
 
@@ -244,7 +244,7 @@ make test-race    # تست‌های رگرسیون همراه با race detector
 |---|---|
 | **Three unified interfaces** | Native Desktop app, interactive Terminal (TUI), and Telegram bot — all powered by the same core engine |
 | **Desktop App (`v1.16.0`)** | Full **English & Persian (`فارسی`)** UI with smart RTL, Git Changes & colored Unified Diff panel with two-step Revert, `@file` fuzzy mentions, file & image attachments (paperclip, Drag & Drop, `Ctrl+V` screenshot paste), multi-thread workspace history, in-app Skills / Memory / Service Connections management, and one-click SHA-256 verified **GitHub Releases auto-updates** |
-| **Safety & execution control** | **Build** vs read-only **Plan** modes, granular command approvals (`Smart` / `Always ask` / `Never ask`), execution mode isolation (**Sandbox / Best-effort / Local** via bubblewrap, Landlock, or Seatbelt), and timed 30-minute YOLO toggle |
+| **Safety & execution control** | **Build** vs read-only **Plan** modes, granular command approvals (`Smart` / `Always ask` / `Never ask`), execution mode isolation (**Sandbox / Best-effort / Local**), and timed 30-minute YOLO toggle. The real sandbox is **bubblewrap** on Linux; macOS and Windows have no kernel-level sandbox, so `sandbox` mode refuses to start instead of running unprotected |
 | **Zero-port remote servers** | Launch and control Macron on remote Linux servers or WSL directly from Desktop over encrypted SSH with host-key verification (`~/.ssh/known_hosts`) |
 | **Transparent local memory** | Conversations, personality, notes, and skills stay in plain editable files (`SOUL.md`, `USER.md`, `MEMORY.md`, `skills/`) and local SQLite under your profile |
 
@@ -255,7 +255,7 @@ make test-race    # تست‌های رگرسیون همراه با race detector
 #### Linux & macOS
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Metixpro/Macron-Agent/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/SeniorAlfred/Macron-Agent/main/install.sh | bash
 ```
 
 - Pick **current user** (no `sudo` required) or **system/root** install.
@@ -263,7 +263,7 @@ curl -fsSL https://raw.githubusercontent.com/Metixpro/Macron-Agent/main/install.
 
 #### Windows
 
-Download and run `Macron-Setup-….exe` from the [latest release](https://github.com/Metixpro/Macron-Agent/releases/latest):
+Download and run `Macron-Setup-….exe` from the [latest release](https://github.com/SeniorAlfred/Macron-Agent/releases/latest):
 - One universal installer for every Windows PC (auto-detects `x64`, `x86`, and `ARM64`).
 - Installs without admin rights into `%LOCALAPPDATA%\Programs\Macron` with both **Macron** (desktop) and **Macron Terminal**, integrates with Start Menu and Windows Apps uninstall, and keeps settings/history in `~\.macron`.
 - Because the installer is not commercially code-signed, Windows SmartScreen may prompt — click **More info → Run anyway**.
@@ -271,7 +271,7 @@ Download and run `Macron-Setup-….exe` from the [latest release](https://github
 Or install directly via PowerShell:
 
 ```powershell
-irm https://raw.githubusercontent.com/Metixpro/Macron-Agent/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/SeniorAlfred/Macron-Agent/main/install.ps1 | iex
 ```
 
 ---
@@ -396,7 +396,7 @@ macron uninstall --dry-run
 macron uninstall
 
 # Build & test from source (requires Git, Make, and Go 1.26+)
-git clone https://github.com/Metixpro/Macron-Agent.git
+git clone https://github.com/SeniorAlfred/Macron-Agent.git
 cd Macron-Agent
 make build
 make check        # tests, installer syntax, and UI bundle verification
@@ -404,7 +404,7 @@ make audit        # staticcheck + govulncheck
 make test-race    # regression suite with Go race detector
 ```
 
-To install optional Python/browser tools from a source checkout, run `./install.sh --binary ./bin/macron --tools --browser-agent --no-setup`. See [SERVER.md](SERVER.md) for deployment, services, and recovery, and [docs/testing.md](docs/testing.md) for live-model testing.
+To install optional Python/browser tools from a source checkout, run `./install.sh --binary ./bin/macron --tools --browser-agent --no-setup`. Note that `--browser-agent` is optional and heavy (roughly 1 GB, because it installs `browser-use` plus its model SDKs in a second virtualenv); `--tools` alone is enough for the document, media and data tools. See [SERVER.md](SERVER.md) for deployment, services, and recovery, and [docs/testing.md](docs/testing.md) for live-model testing.
 
 ---
 

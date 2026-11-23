@@ -7,7 +7,7 @@ Installation, service management, dependencies, backups and recovery.
 On Linux or macOS:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/Metixpro/Macron-Agent/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/SeniorAlfred/Macron-Agent/main/install.sh | bash
 ```
 
 The installer asks for the scope before changing files and shows its plan.
@@ -25,7 +25,10 @@ Python. Neither needs root. Missing optional native executables are reported in
 user scope; FFmpeg and browser system libraries may still need host provisioning.
 The program adds its private `venv/bin` to PATH at startup, including in services.
 `--browser` downloads a private Chromium; `--browser-agent` also creates a separate
-autonomous-browser environment. `--no-tools` skips Python and system packages.
+autonomous-browser environment. That second environment is optional and large
+(about 1 GB: `browser-use` plus the model SDKs it depends on), the installer warns
+before creating it, and `macron` simply turns the `browser_agent` tool off when it
+is absent. `--no-tools` skips Python and system packages.
 
 For unattended user installation:
 
@@ -492,6 +495,12 @@ read-only, private keys and the agent's own settings, key and database are hidde
 other sessions' workspaces are invisible, and only the workspace (with the terminal
 interface, the project folder) and build caches (`~/.cache`, `~/go`, `~/.npm`,
 `~/.cargo`…) are writable. `MACRON_SANDBOX_NO_NET=1` also cuts the network.
+
+bubblewrap is the only sandbox backend the program has, and it is Linux-only.
+On macOS and Windows `MACRON_EXECUTION_MODE=sandbox` fails closed at startup
+rather than pretending to isolate anything; `best-effort` (the default) and
+`local` run commands as your own user with no kernel-level isolation, so the
+approval gate and a dedicated account remain the real boundary there.
 
 A question the agent asks with a poll now survives a restart (kept in the
 database for the poll's lifetime). Before saying it is done after changing code,

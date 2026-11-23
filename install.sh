@@ -5,7 +5,7 @@ usage() {
  cat <<'USAGE'
 Macron Agent · Installer
 
-  curl -fsSL https://raw.githubusercontent.com/Metixpro/Macron-Agent/main/install.sh | bash
+  curl -fsSL https://raw.githubusercontent.com/SeniorAlfred/Macron-Agent/main/install.sh | bash
 
   --scope user|system  choose the installation owner before installing
   --home DIR           private data and Python environments
@@ -17,7 +17,7 @@ Macron Agent · Installer
   --no-tools            skip Python dependencies and system-package installation
   --tools               install Python tools (default)
   --browser             add a private Chromium download
-  --browser-agent       add the autonomous browser environment
+  --browser-agent       add the autonomous browser environment (large: about 1 GB, optional)
   --no-service          do not run the Telegram bot in the background
   --no-setup            leave the model and Telegram for later
   --yes                 use defaults without questions
@@ -244,6 +244,13 @@ install_python_packages() {
  doing 'Python tools (documents, media, data, web)'
  run_logged "$PY" -m pip install --disable-pip-version-check --require-hashes -r "$req" || die 'Python tools did not install; rerun to finish'
  if [ "$BROWSER_AGENT" = 1 ]; then
+  warn 'The autonomous browser environment is optional and large (roughly 1 GB): browser-use plus the model SDKs it pulls in.'
+  if [ "$ASSUME_YES" = 0 ] && [ "$INTERACTIVE" = 1 ]; then
+   ask 'Install the autonomous browser environment too?' Y
+   [ "$ANSWER" = Y ] || BROWSER_AGENT=0
+  fi
+ fi
+ if [ "$BROWSER_AGENT" = 1 ]; then
   local agent_req="$SCRIPT_DIR/requirements-browser-agent.lock"
   [ -z "$SOURCE_DIR" ] || agent_req="$SOURCE_DIR/requirements-browser-agent.lock"
   if [ ! -f "$agent_req" ] && [ -n "$RELEASE_DIR" ] && [ -f "$RELEASE_DIR/requirements-browser-agent.lock" ]; then agent_req="$RELEASE_DIR/requirements-browser-agent.lock"; fi
@@ -292,7 +299,7 @@ choose_scope() {
 }
 
 main() {
- REPO="${MACRON_REPO:-Metixpro/Macron-Agent}"
+ REPO="${MACRON_REPO:-SeniorAlfred/Macron-Agent}"
  VERSION='' RELEASE_TAG='' RELEASE_DIR='' PREFIX='' BINARY='' SOURCE_DIR='' INSTALL_SCOPE=''
  HOME_DIR="${MACRON_HOME:-}" SCRIPT_DIR=''
  if [ -n "${BASH_SOURCE[0]:-}" ] && [ -f "${BASH_SOURCE[0]}" ]; then SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"; fi

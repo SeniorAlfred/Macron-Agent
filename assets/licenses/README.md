@@ -7,7 +7,7 @@ Unicode data comes from github.com/benoitkugler/textlayout v0.3.2 (MIT).
 The license texts are included here.
 
 Macron's complete source and build files are available from the release tag at
-https://github.com/Metixpro/Macron-Agent. To rebuild or relink with a modified
+https://github.com/SeniorAlfred/Macron-Agent. To rebuild or relink with a modified
 library, check out that tag, run `go mod download`, use `go mod edit -replace`
 to point at your library source, then run `make build` or `make release`.
 
